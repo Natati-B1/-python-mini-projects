@@ -43,7 +43,7 @@ def play_game ():
 
     loop = True
     while loop:
-        additional_card = input("Type 'y' to get another card, type 'n' to pass:\n")
+        additional_card = input("Type 'Hit' to get another card, type 'Stand' to pass:\n").lower()
 
         if additional_card == 'y':
             player_card.append(random.choice(cards))
@@ -73,6 +73,7 @@ def play_game ():
 user = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
 if user == 'y':
     play_game()
+
 
 
 
